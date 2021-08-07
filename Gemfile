@@ -39,6 +39,8 @@ group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
   gem 'rspec-rails', '~> 4.0.0.beta2'
   gem 'rails-controller-testing'
+  gem "factory_bot_rails", "~> 4.10.0"
+  gem 'capybara'
 end
 
 group :development do
@@ -56,6 +58,7 @@ group :test do
 end
 
 gem 'devise'
+gem 'faker'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
