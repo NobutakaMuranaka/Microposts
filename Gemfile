@@ -29,6 +29,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass'
 
+gem 'carrierwave',             '1.2.2'
+gem "mini_magick",             '>= 4.9.4'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # Use ActiveModel has_secure_password
@@ -65,4 +68,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do # 本番環境
   gem 'pg' # PostgreSQL
+  gem 'fog-aws'
 end
